@@ -171,7 +171,7 @@ fun MainScreen(db: DictDbHelper, onSpeak: (String) -> Unit) {
                         Card(modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(12.dp)) {
                             Row(modifier = Modifier.padding(16.dp).fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
                                 Column {
-                                    Text(" ()", fontSize = 18.sp, fontWeight = FontWeight.Bold)
+                                    Text(w.english, fontSize = 18.sp, fontWeight = FontWeight.Bold)
                                     Text(w.hindi, fontSize = 16.sp, color = MaterialTheme.colorScheme.primary)
                                 }
                                 IconButton(onClick = { onSpeak(w.english) }) { Icon(Icons.Default.VolumeUp, null) }
